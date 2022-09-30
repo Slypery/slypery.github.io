@@ -1,0 +1,90 @@
+html{
+    background-color: #141414;
+}
+@font-face {
+    font-family: 'sans';
+    src: url(font2/Cocogoose\ Pro\ Light-trial.ttf) ;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 450px 1fr 1fr 450px;
+    grid-template-rows: 80px 1fr 80px;
+}
+.gambar{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(48, 48, 48, 0.6)), url(img/me.jpg);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 0 20px 20px 0;
+    border: 2px rgb(111, 80, 0) solid;
+    border-left : none;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.054),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.068),
+    0 12.5px 10px rgba(0, 0, 0, 0.08),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.092),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.1),
+    0 100px 80px rgba(0, 0, 0, 0.22);
+}
+.content{
+    padding-right: 20px;
+    font-family: 'Segoe UI';
+    color: rgb(201, 201, 201);
+    text-shadow: 0 0 5px black;
+    font-weight: 1000;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(210, 210, 210, 0.2);
+    border-radius: 20px 0 0 20px;
+    border: 2px rgb(111, 80, 0) solid;
+    border-right: none;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.054),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.068),
+    0 12.5px 10px rgba(0, 0, 0, 0.08),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.092),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.1),
+    0 100px 80px rgba(0, 0, 0, 0.22);
+}
+.text{
+    margin-bottom: 0;
+    font-size: 25px;
+    color: white;
+}
+a{
+    text-decoration: 0;
+}
+.home{
+    color: white;
+    transition: 0.3s;
+    font-family: 'sans';
+    font-size: 25px;
+    margin: 0;
+    display: inline-block;
+}
+.ngeselin{
+    color: white;
+    margin: 0;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 35px;
+    font-family: 'sans';
+}
+.balik p:hover{
+    color: rgb(168, 168, 168);
+}
+.balik{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}

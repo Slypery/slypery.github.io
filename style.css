@@ -1,0 +1,182 @@
+body{
+    margin:0;
+    background-color: black;
+}
+@font-face {
+    font-family: 'logomiring';
+    src: url(font/spacerangeroutital.ttf);
+}
+@font-face {
+    font-family: 'NAMA';
+    src: url(font2/Cocogoose\ Pro\ Italic-trial.ttf);
+}
+@font-face {
+    font-family: 'sans';
+    src: url(font2/Cocogoose\ Pro\ Light-trial.ttf) ;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 90px 1fr 180px;
+}
+.container div{
+    cursor: default;
+}
+.header{
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #141414;
+    border-bottom: 1px rgb(111, 80, 0) solid;
+}
+.textheader{
+    color: white;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 3px;
+    margin-left: 25px ;
+    cursor: default;
+    font-family: 'NAMA';
+    font-size: 70px;
+}
+.textheader:hover{
+    color: rgb(237, 175, 19);
+    margin-top: 1px;
+    font-size: 72px;
+}
+.sidebar{
+    background-color: #1e1e1e;
+    border-right: 1px rgb(111, 80, 0) solid;
+    color: aliceblue;
+    padding: 30px;
+}
+.parg{
+    padding-bottom: 5px;
+}
+.parg p{
+    font-family: 'Segoe UI';
+    color: rgb(172, 172, 172);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.parg p:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.parg2{
+    color: rgb(214, 157, 0);
+    margin: 0;
+    font-size: 35px;
+    font-family: 'NAMA';
+    transition: 0.5s;
+}
+.parg2:hover{
+    color: gold;
+    font-size: 37px;
+}
+.head{
+    padding-bottom: 5px;
+}
+.head p{
+    font-family: 'sans';
+    font-size: 20px;
+    margin: 0;
+}
+.tab{
+    padding: 20px 20px 20px 10px;
+    background-color: #1e1e1e;
+    border-right: 1px rgb(111, 80, 0) solid;
+}
+.tab ul{
+    padding: 20px;
+    margin: 0;
+}
+.tab ul li{
+    display: block;
+    border-bottom: solid #323232 1px;
+}
+.list{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+a{
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+.list a:link {
+    color: white;
+    background-color: transparent;
+}
+  
+.list a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+  
+.list a:hover {
+    color: gray;
+    background-color: transparent;
+}
+  
+.list a:active {
+    color: white;
+    background-color: transparent;
+}
+.list2{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.list2 a{
+    color: rgb(237, 175, 19);
+    text-decoration: underline;
+}
+.list2 a:hover{
+    color: rgb(86, 72, 34);
+}
+.content{
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color: rgba(255, 254, 240, 0.938);
+    font-family: 'logomiring';
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/archer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.8;
+    transition: 1s;
+}
+.content:hover{
+    color: aliceblue;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(img/archer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    opacity: 1;
+}
+.content p{
+    font-size: 260px;
+    margin: 80px 0 0 150px;
+    transition: 1s;
+    opacity: 0.1;
+    display: inline-block;
+    position: absolute;
+}
+.content p:hover{
+    font-size: 262px;
+    margin: 79px 0 0 149px;
+    opacity: 1;
+}
